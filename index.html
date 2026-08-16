@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Examination System</h1>
+        <p>Test your knowledge online</p>
+    </header>
+
+    <main class="container">
+
+        <section id="startScreen" class="card">
+            <h2>Welcome to the Online Examination</h2>
+            <p>Enter your name to start the examination.</p>
+
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <button onclick="startExam()">Start Exam</button>
+        </section>
+
+        <section id="examScreen" class="card hidden">
+            <div class="exam-header">
+                <h2>Online Examination</h2>
+                <div id="timer">Time: 05:00</div>
+            </div>
+
+            <h3 id="questionNumber"></h3>
+            <p id="question"></p>
+
+            <div id="options"></div>
+
+            <button onclick="nextQuestion()">Next</button>
+        </section>
+
+        <section id="resultScreen" class="card hidden">
+            <h2>Examination Result</h2>
+
+            <p id="resultMessage"></p>
+            <p id="score"></p>
+            <p id="percentage"></p>
+
+            <button onclick="restartExam()">Take Exam Again</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Online Examination System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
