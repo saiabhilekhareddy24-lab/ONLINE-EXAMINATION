@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    color: #4b3ca7;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background: #4b3ca7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #35298a;
+}
+
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#timer {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    background: #f2f2f2;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    background: #e5e1ff;
+}
+
+.option.selected {
+    border-color: #4b3ca7;
+    background: #ddd8ff;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultScreen {
+    text-align: center;
+}
+
+#score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b3ca7;
+}
+
+#percentage {
+    font-size: 22px;
+    color: #27ae60;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .exam-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+}
