@@ -1,0 +1,58 @@
+Test Case	Input/Action	Expected Output
+TC01	Open index.html	Login/start screen appears
+TC02	Click Start without entering name	"Please enter your name" appears
+TC03	Enter student name	Examination starts
+TC04	Select correct answer	Answer is highlighted
+TC05	Click Next without selecting answer	Warning appears
+TC06	Select correct answers	Score increases
+TC07	Complete all questions	Result screen appears
+TC08	Complete exam with all correct answers	5/5 and 100%
+TC09	Click Take Exam Again	Exam resets
+TC10	Wait until timer reaches 00:00	Examination automatically ends
+========================================
+       ONLINE EXAMINATION SYSTEM
+========================================
+
+Student Name: Rahul
+
+Question 1 of 5
+What does HTML stand for?
+> Hyper Text Markup Language
+
+Question 2 of 5
+Which language is used to style a web page?
+> CSS
+
+Question 3 of 5
+Which language is mainly used to add
+interactivity to web pages?
+> JavaScript
+
+Question 4 of 5
+Which HTML tag is used to create a hyperlink?
+> <a>
+
+Question 5 of 5
+Which symbol is used for an ID selector in CSS?
+> #
+
+========================================
+             EXAM RESULT
+========================================
+
+Well done, Rahul!
+
+Score: 5 / 5
+Percentage: 100%
+
+========================================
+========================================
+             EXAM RESULT
+========================================
+
+Well done, Rahul!
+
+Score: 3 / 5
+Percentage: 60%
+
+========================================
